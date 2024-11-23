@@ -1,0 +1,87 @@
+.navbar {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navbar .logo {
+  width: 100px;
+}
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  padding: 50px 20px;
+  top: -100%;
+  width: 100%;
+  height: 80vw;
+  background: hsla(23, 12%, 4%, 0.2);
+  backdrop-filter: blur(8px);
+  flex-direction: column;
+  row-gap: 20px;
+  color: #202533;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 100;
+  transition: 0.5s;
+}
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.navbar-right .right-icon {
+  width: 20px;
+  cursor: pointer;
+}
+
+.navbar-cart-icon {
+  position: relative;
+  cursor: pointer;
+}
+.navbar-cart-icon .dot {
+  position: absolute;
+  min-width: 10px;
+  min-height: 10px;
+  background: tomato;
+  border-radius: 5px;
+  right: -5px;
+  top: -5px;
+}
+.navbar button {
+  background: transparent;
+  font-size: 14px;
+  color: #49557e;
+  border: 1px solid tomato;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 8px 20px;
+  border-radius: 30px;
+}
+.navbar button:hover {
+  background: #fff4f2;
+}
+.navbar .active {
+  padding-bottom: 2px;
+  border-bottom: 2px solid tomato;
+}
+
+.navbar .cross-menu {
+  width: 25px;
+  position: absolute;
+  right: 20px;
+  top: 25px;
+}
+
+.showmenu {
+  top: 0;
+}
+@media (min-width: 700px) {
+  #open-menu {
+    display: none;
+  }
+  .navbar-menu {
+    display: none;
+  }
+}
